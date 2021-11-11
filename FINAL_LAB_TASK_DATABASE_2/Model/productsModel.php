@@ -16,7 +16,7 @@
 
 	function getAllProducts(){
 		$con = getConnection();
-		$sql = "select * from productss";
+		$sql = "select * from products";
 		$result = mysqli_query($con, $sql);
 		return $result;
 	}
@@ -40,7 +40,7 @@
 		}
 	}
 
-	function deleteUser($id){
+	function deleteProduct($id){
 		$con = getConnection();
 		$sql = "delete from products where id={$id}";
 		if(mysqli_query($con, $sql)){

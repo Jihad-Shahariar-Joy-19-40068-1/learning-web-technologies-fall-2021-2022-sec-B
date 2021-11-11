@@ -17,6 +17,10 @@
 	<fieldset>
 			<legend>DISPLAY</legend>
 	<br>
+	<center>
+	<a href="AddProduct.php">Add Product</a> |
+	<a href="searchProduct.php">Search Product</a>
+	</center>
 	<table border="1" align="center">
 		<tr>
 			<th>NAME</th>

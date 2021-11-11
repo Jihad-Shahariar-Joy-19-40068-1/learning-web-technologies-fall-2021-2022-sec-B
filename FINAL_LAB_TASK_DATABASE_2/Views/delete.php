@@ -1,5 +1,5 @@
 <?php 
-	require_once('../model/usersModel.php');
+	require_once('../model/productsModel.php');
 	$id = $_REQUEST['id'];
 	$user = getProductById($id);
 	//print_r($user);
@@ -10,24 +10,25 @@
 	<title> Delete User</title>
 </head>
 <body>
-	<form method="post" action="../controller/deleteUser.php">
+	<form method="post" action="../controller/deleteProductCheck.php">
 		<fieldset>
-			<legend>Delete Product</legend>
+			<legend>DELETE PRODUCT</legend>
 			<table>
 				<tr>
 					<td>Name: </td>
-					<!--<td><input type="text" name="username" value="<?=$user['name']?>"></td>-->
 					<td><?=$user['name']?></td>
 				</tr>
 				<tr>
 					<td>Buying Price:</td>
-					<!--<td><input type="password" name="password" value="<?=$user['buyingPrice']?>"></td>-->
 					<td><?=$user['buyingPrice']?></td>
 				</tr>
 				<tr>
 					<td>Selling Price:</td>
-					<!--<td><input type="email" name="email" value="<?=$user['sellingPrice']?>"></td>-->
 					<td><?=$user['sellingPrice']?></td>
+				</tr>
+				<tr>
+					<td>Displayable:</td>
+					<td>yes(returns to display pageand view list)</td>
 				</tr>
 				<tr>
 					<td>Are You Sure! <br> Delete?</td>

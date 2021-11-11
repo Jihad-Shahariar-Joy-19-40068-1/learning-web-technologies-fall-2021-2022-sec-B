@@ -1,8 +1,7 @@
 <?php 
-	require_once('../model/usersModel.php');
+	require_once('../model/productsModel.php');
 	$id = $_REQUEST['id'];
 	$user = getProductById($id);
-	//print_r($user);
 ?>
 
 <html>
@@ -10,9 +9,9 @@
 	<title> Edit Product</title>
 </head>
 <body>
-	<form method="post" action="../controller/updateProduct.php">
+	<form method="post" action="../controller/editProductCheck.php">
 		<fieldset>
-			<legend>Edit product</legend>
+			<legend>EDIT PRODUCt</legend>
 			<table>
 				<tr>
 					<td>Name: </td>
